@@ -88,8 +88,8 @@
     <Content Include="pages\Home_usuarios.aspx" />
     <Content Include="pages\Home_administrador.aspx" />
     <Content Include="pages\Home_entrenador.aspx" />
-    <Content Include="pages\pagina3.aspx" />
-    <Content Include="pages\pagina4.aspx" />
+    <Content Include="pages\tabla_dieta.aspx" />
+    <Content Include="pages\tabla_rutina.aspx" />
     <Content Include="pages\pagina5.aspx" />
     <Content Include="pages\pagina6.aspx" />
     <Content Include="pages\pagina7.aspx" />
@@ -249,19 +249,19 @@
     <Compile Include="pages\Home_entrenador.aspx.designer.cs">
       <DependentUpon>Home_entrenador.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\pagina3.aspx.cs">
-      <DependentUpon>pagina3.aspx</DependentUpon>
+    <Compile Include="pages\tabla_dieta.aspx.cs">
+      <DependentUpon>tabla_dieta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\pagina3.aspx.designer.cs">
-      <DependentUpon>pagina3.aspx</DependentUpon>
+    <Compile Include="pages\tabla_dieta.aspx.designer.cs">
+      <DependentUpon>tabla_dieta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\pagina4.aspx.cs">
-      <DependentUpon>pagina4.aspx</DependentUpon>
+    <Compile Include="pages\tabla_rutina.aspx.cs">
+      <DependentUpon>tabla_rutina.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\pagina4.aspx.designer.cs">
-      <DependentUpon>pagina4.aspx</DependentUpon>
+    <Compile Include="pages\tabla_rutina.aspx.designer.cs">
+      <DependentUpon>tabla_rutina.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\pagina5.aspx.cs">
       <DependentUpon>pagina5.aspx</DependentUpon>
