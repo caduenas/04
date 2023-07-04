@@ -58,13 +58,13 @@
                                 <a class="nav-link" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
+                                <a class="nav-link" href="entrenadores.aspx">Ver entrenadores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Acerca de</a>
+                                <a class="nav-link" href="central_usuarios.aspx">Visualizar Tablas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="preferencias.aspx">Preferencias</a>
                             </li>
                         </ul>
                     </div>
@@ -74,10 +74,10 @@
                 <h1 class="text-center">Asignacion Tablas</h1>
                 <div class="table-responsive mt-5">
                     <asp:GridView ID="GridView1" runat="server" CssClass="table" DataKeyNames="id_asesorados">
-                         <Columns>
+                        <Columns>
                             <asp:TemplateField HeaderText="Acciones">
                                 <ItemTemplate>
-                                    <asp:Button ID="btnVer" runat="server" CssClass="btn btn-primary btn-sm" Text="Ver" OnClick="btnVer_Click"/>
+                                    <asp:Button ID="btnVer" runat="server" CssClass="btn btn-primary btn-sm" Text="Ver" OnClick="btnVer_Click" />
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
