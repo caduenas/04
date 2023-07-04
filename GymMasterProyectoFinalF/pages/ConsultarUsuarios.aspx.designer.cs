@@ -11,52 +11,52 @@ namespace GymMasterProyectoFinalF.pages
 {
 
 
-    public partial class preferencias
+    public partial class Consultar
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control NombreUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox NombreUsuario;
 
         /// <summary>
-        /// Control formPanel.
+        /// Control correoE.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel formPanel;
+        protected global::System.Web.UI.WebControls.TextBox correoE;
 
         /// <summary>
-        /// Control contrasena.
+        /// Control Busqueda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasena;
+        protected global::System.Web.UI.WebControls.Button Busqueda;
 
         /// <summary>
-        /// Control re_contrasena.
+        /// Control volver.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox re_contrasena;
+        protected global::System.Web.UI.WebControls.Button volver;
 
         /// <summary>
-        /// Control btnCambiar.
+        /// Control Resultado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiar;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Resultado;
     }
 }

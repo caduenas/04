@@ -68,6 +68,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacto</a>
                             </li>
+                              <li class="nav-item">
+           <a class="nav-link" href="javascript:history.back()">Volver</a>
+          </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="index.aspx">Cerrar Sesión</a>
+          </li>
                         </ul>
                     </div>
                 </nav>

@@ -18,6 +18,15 @@ namespace GymMasterProyectoFinalF.pages
             public string Email { get; set; }
             public int Edad { get; set; }
         }
+
+        public class Entrenador
+        {
+            public int id_entrenador { get; set; } // Agrega esta propiedad
+            public string nombre_entrenador { get; set; }
+            public string Email { get; set; }
+            public string Numero { get; set; }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -27,38 +36,51 @@ namespace GymMasterProyectoFinalF.pages
                 // Asignar los datos al GridView    
                 GridView1.DataSource = usuarios;
                 GridView1.DataBind();
+
+                List<Entrenador> entrenadores = ObtenerEntrenadores();
+
+                // Asignar los datos al GridView    
+                GridView2.DataSource = entrenadores;
+                GridView2.DataBind();
             }
-        }
+        
 
-        protected void btnVer_Click(object sender, EventArgs e)
-        {
-            // Obtén el botón que se activó
-            Button btnVer = (Button)sender;
 
-            // Obtén la fila que contiene el botón
-            GridViewRow row = (GridViewRow)btnVer.NamingContainer;
 
-            // Obtén el índice de la fila
-            int rowIndex = row.RowIndex;
+            
+              
 
-            if (GridView1.Rows.Count > 0 && rowIndex >= 0 && rowIndex < GridView1.Rows.Count)
+
+
+            string userId = "";
+            HttpCookie cookie = Request.Cookies["UserId"];
+            if (cookie != null)
             {
-                // Obtén el ID del usuario correspondiente al registro seleccionado
-                int idUsuario = Convert.ToInt32(GridView1.DataKeys[rowIndex].Value);
-
-                // Crea una cookie y establece el valor del ID del usuario
-                HttpCookie cookie = new HttpCookie("Asesorado_seleccionado", idUsuario.ToString());
-                Response.Cookies.Add(cookie);
-
-                // Redirige a otra página o realiza cualquier otra acción necesaria
-                Response.Redirect("edicion_tablas.aspx");
+                userId = cookie.Value;
+                // Utiliza el userId como necesites
             }
             else
             {
-                // Maneja el caso cuando el GridView no tiene filas o el índice está fuera de rango
+                // La cookie no existe, maneja el caso en consecuencia
             }
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+            conn.Open();
+            string sql = "SELECT * FROM admins WHERE id_admin = @id_adminis";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@id_adminis", userId); // Agrega el parámetro y su valor
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            no_user.Text = reader["nombre_admin"].ToString();
+            corre_user.Text = reader["correo_admin"].ToString();
+            reader.Close();
+            conn.Close(); // Recuerda cerrar la conexión
+
+
+
         }
 
+     
         private List<Usuario> ObtenerUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();
@@ -92,24 +114,85 @@ namespace GymMasterProyectoFinalF.pages
             return usuarios;
         }
 
-        protected void botonConsultar_Click(object sender, EventArgs e)
-        {
 
+
+
+
+
+
+        private List<Entrenador> ObtenerEntrenadores()
+        {
+            List<Entrenador> entrenadores = new List<Entrenador>();
+
+            // Lógica para obtener los datos de la base de datos
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+            conn.Open();
+            string sql = "SELECT id_entrenador, nombre_entrenador, correo_entrenador, correo_entrenador, numero_entrenador FROM entrenadores";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int id = Convert.ToInt32(reader["id_entrenador"]);
+                string nombre = reader["nombre_entrenador"].ToString();
+                string email = reader["correo_entrenador"].ToString();
+                string telefono = reader["numero_entrenador"].ToString();
+
+
+                entrenadores.Add (new Entrenador()
+                {
+                    id_entrenador = id,
+                    nombre_entrenador = nombre,
+                    Email = email,
+                    Numero = telefono
+                });
+            }
+
+            reader.Close();
+            conn.Close();
+
+            return entrenadores;
+        }
+
+            protected void botonConsultar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("consultarUsuarios.aspx");
         }
 
         protected void botonInsertar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("InsertarUsuarios.aspx");
         }
 
         protected void botonActualizar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("ActualizarUsuarios.aspx");
         }
 
         protected void botonEliminar_Click(object sender, EventArgs e)
         {
+            Response.Redirect("EliminarUsuarios.aspx");
+        }
 
+        protected void botonConsultarEntrenadores_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ConsultarEntrenadores.aspx");
+        }
+
+        protected void botonInsertarEntrenadores_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InsertarEntrenadores.aspx");
+        }
+
+        protected void botonActualizarEntrenadores_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ActualizarEntreandores.aspx");
+
+        }
+
+        protected void botonEliminarEntrenadores_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarEntrenadores.aspx");
         }
     }
 }

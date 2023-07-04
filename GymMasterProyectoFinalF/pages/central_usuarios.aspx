@@ -69,6 +69,13 @@
             <li class="nav-item">
               <a class="nav-link" href="preferencias.aspx">Preferencias</a>
             </li>
+                <li class="nav-item">
+           <a class="nav-link" href="javascript:history.back()">Volver</a>
+          </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="index.aspx">Cerrar Sesión</a>
+          </li>
           </ul>
         </div>
       </nav>
@@ -76,8 +83,9 @@
     <div class="container">
         <h1 class="text-center">Central de Usuario</h1>
         <div class="text-center mt-5">
-            <img src="" alt="Imagen de Usuario" style="width: 200px; height: 200px;" />
-            <asp:Label ID="no_user" runat="server" Text="Nombre Usuario" Font-Size="Large"></asp:Label>
+            <h6 > Usuario:</h6>
+            <asp:Label  ID="no_user" runat="server" Text="Nombre Usuario" Font-Size="Large"></asp:Label>
+            <h6 > Correo:</h6>
             <asp:Label ID="corre_user" runat="server" Text="Correo Usuario" Font-Size="Large"></asp:Label>
         </div>
         <div class="row justify-content-center mt-5">

@@ -129,12 +129,12 @@
         <label for="username">Altura:</label>
           <asp:TextBox ID="Altura" runat="server"  name="username" placeholder="Ingrese su usuario"></asp:TextBox>
       </div>
-        
+         <label for="username">Meta:</label>
             <asp:DropDownList ID="meta" runat="server">
-            <asp:ListItem Text="Bajar de peso" Value="1"></asp:ListItem>
-            <asp:ListItem Text="Aumento de masa muscular" Value="2"></asp:ListItem>
-            <asp:ListItem Text="Nutricion" Value="3"></asp:ListItem>
-            <asp:ListItem Text="Equilibrado" Value="3"></asp:ListItem>
+            <asp:ListItem Text="Bajar de peso" Value="Bajar de peso"></asp:ListItem>
+            <asp:ListItem Text="Aumento de masa muscular" Value="Aumento masa"></asp:ListItem>
+            <asp:ListItem Text="Nutricion" Value="Nutricion"></asp:ListItem>
+            <asp:ListItem Text="Equilibrado" Value="Equilibrado"></asp:ListItem>
         </asp:DropDownList>
 
       <div class="form-group">

@@ -11,124 +11,133 @@ namespace GymMasterProyectoFinalF.pages
 {
 
 
-    public partial class antropometrica_usuario
+    public partial class InsertarUsuarios
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control nombresComple.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox nombresComple;
 
         /// <summary>
-        /// Control altura.
+        /// Control apellidosComple.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox altura;
+        protected global::System.Web.UI.WebControls.TextBox apellidosComple;
 
         /// <summary>
-        /// Control peso.
+        /// Control correoElect.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox peso;
+        protected global::System.Web.UI.WebControls.TextBox correoElect;
 
         /// <summary>
-        /// Control edad.
+        /// Control numero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox edad;
+        protected global::System.Web.UI.WebControls.TextBox numero;
 
         /// <summary>
-        /// Control Bicep_D.
+        /// Control Edad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Bicep_D;
+        protected global::System.Web.UI.WebControls.TextBox Edad;
 
         /// <summary>
-        /// Control Bicep_I.
+        /// Control Peso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Bicep_I;
+        protected global::System.Web.UI.WebControls.TextBox Peso;
 
         /// <summary>
-        /// Control cadera.
+        /// Control Altura.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cadera;
+        protected global::System.Web.UI.WebControls.TextBox Altura;
 
         /// <summary>
-        /// Control muslo_derecho.
+        /// Control meta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox muslo_derecho;
+        protected global::System.Web.UI.WebControls.DropDownList meta;
 
         /// <summary>
-        /// Control muslo_izquierdo.
+        /// Control password.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox muslo_izquierdo;
+        protected global::System.Web.UI.WebControls.TextBox password;
 
         /// <summary>
-        /// Control abdomen_bajo.
+        /// Control confirmarPassword.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox abdomen_bajo;
+        protected global::System.Web.UI.WebControls.TextBox confirmarPassword;
 
         /// <summary>
-        /// Control abdomen_alto.
+        /// Control Table1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox abdomen_alto;
+        protected global::System.Web.UI.WebControls.Table Table1;
 
         /// <summary>
-        /// Control abdomen_medio.
+        /// Control botoninsertar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox abdomen_medio;
+        protected global::System.Web.UI.WebControls.Button botoninsertar;
 
         /// <summary>
-        /// Control btnCambiar.
+        /// Control volver.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiar;
+        protected global::System.Web.UI.WebControls.Button volver;
+
+        /// <summary>
+        /// Control resultadoLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label resultadoLabel;
     }
 }

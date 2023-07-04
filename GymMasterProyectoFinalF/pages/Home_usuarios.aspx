@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home_usuarios.aspx.cs" Inherits="GymMasterProyectoFinalF.pages.Home_usuarios" %>
 
-CodeBehind="Home_usuarios.aspx.cs" Inherits="GymMasterProyectoFinalF.pages.pagina1" %>
+
 
 <!DOCTYPE html>
 
@@ -66,18 +66,32 @@ CodeBehind="Home_usuarios.aspx.cs" Inherits="GymMasterProyectoFinalF.pages.pagin
                     <li class="nav-item">
                         <a class="nav-link" href="preferencias.aspx">Preferencias</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.aspx">Cerrar sesión</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <footer>
-        <div class="text-center">
-            &copy; 2023 GYMaster. Todos los derechos reservados.
-        </div>
-    </footer>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+   <div class="container">
+    <div class="text-center mt-5">
+      <h2>Bienvenid@</h2>
+    </div>
+    <div class="text-center mt-4">
+      <img src="https://media.istockphoto.com/id/675179390/es/foto/entrenador-muscular-en-portapapeles.jpg?s=612x612&w=0&k=20&c=eFDuNzHQJfNzOpZGxCPi8pM8bC18EeIm6lgVlmjPuhw=" alt="Imagen motivadora" width="400">
+    </div>
+    <div class="text-center mt-4">
+      <p>Hazlo tú. No esperes a que alguien más lo haga por ti. Tú tienes el poder de alcanzar tus metas y superar tus límites. ¡Atrévete y logra lo que te propones!</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="text-center">
+      &copy; 2023 GYMaster. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

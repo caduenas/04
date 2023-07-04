@@ -11,26 +11,17 @@ namespace GymMasterProyectoFinalF.pages
 {
 
 
-    public partial class preferencias
+    public partial class EliminarEntrenadores
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control IDentrenador.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Control formPanel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel formPanel;
+        protected global::System.Web.UI.WebControls.TextBox IDentrenador;
 
         /// <summary>
         /// Control contrasena.
@@ -42,21 +33,30 @@ namespace GymMasterProyectoFinalF.pages
         protected global::System.Web.UI.WebControls.TextBox contrasena;
 
         /// <summary>
-        /// Control re_contrasena.
+        /// Control Eliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox re_contrasena;
+        protected global::System.Web.UI.WebControls.Button Eliminar;
 
         /// <summary>
-        /// Control btnCambiar.
+        /// Control volver.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiar;
+        protected global::System.Web.UI.WebControls.Button volver;
+
+        /// <summary>
+        /// Control resultadoLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label resultadoLabel;
     }
 }

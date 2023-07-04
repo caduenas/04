@@ -61,11 +61,18 @@
                                 <a class="nav-link" href="entrenadores.aspx">Ver entrenadores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="central_usuarios.aspx">Visualizar Tablas</a>
+                                <a class="nav-link" href="gestion_usuarios.aspx">Visualizar Tablas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="preferencias.aspx">Preferencias</a>
                             </li>
+                              <li class="nav-item">
+           <a class="nav-link" href="javascript:history.back()">Volver</a>
+          </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="index.aspx">Cerrar Sesión</a>
+          </li>
                         </ul>
                     </div>
                 </nav>

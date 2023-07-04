@@ -67,18 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="pages\ActualizarEntreandores.aspx" />
+    <Content Include="pages\ActualizarUsuarios.aspx" />
     <Content Include="pages\antropometrica_coach.aspx" />
     <Content Include="pages\antropometrica_usuario.aspx" />
     <Content Include="pages\asignacion_tablas.aspx" />
     <Content Include="pages\bienvenido.aspx" />
     <Content Include="pages\central_entrernadores.aspx" />
     <Content Include="pages\central_usuarios.aspx" />
+    <Content Include="pages\ConsultarUsuarios.aspx" />
     <Content Include="pages\edicion_tablas.aspx" />
+    <Content Include="pages\EliminarEntrenadores.aspx" />
+    <Content Include="pages\EliminarUsuarios.aspx" />
     <Content Include="pages\entrenadores.aspx" />
     <Content Include="pages\exitos.aspx" />
     <Content Include="pages\gestion_coach.aspx" />
     <Content Include="pages\gestion_usuarios.aspx" />
     <Content Include="pages\Index.aspx" />
+    <Content Include="pages\ConsultarEntrenadores.aspx" />
+    <Content Include="pages\InsertarEntrenadores.aspx" />
+    <Content Include="pages\InsertarUsuarios.aspx" />
+    <Content Include="pages\OpcionesInsertar.aspx" />
     <Content Include="pages\Opciones_login.aspx" />
     <Content Include="pages\Inicio.aspx" />
     <Content Include="pages\login_administrador.aspx" />
@@ -99,9 +108,24 @@
     <Content Include="pages\registro_administrador.aspx" />
     <Content Include="pages\registro_entrenador.aspx" />
     <Content Include="pages\registro_usuarios.aspx" />
+    <Content Include="Styles\StylesIndex.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\ActualizarEntreandores.aspx.cs">
+      <DependentUpon>ActualizarEntreandores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ActualizarEntreandores.aspx.designer.cs">
+      <DependentUpon>ActualizarEntreandores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ActualizarUsuarios.aspx.cs">
+      <DependentUpon>ActualizarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ActualizarUsuarios.aspx.designer.cs">
+      <DependentUpon>ActualizarUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\antropometrica_coach.aspx.cs">
       <DependentUpon>antropometrica_coach.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,12 +168,33 @@
     <Compile Include="pages\central_usuarios.aspx.designer.cs">
       <DependentUpon>central_usuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\ConsultarUsuarios.aspx.cs">
+      <DependentUpon>ConsultarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ConsultarUsuarios.aspx.designer.cs">
+      <DependentUpon>ConsultarUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\edicion_tablas.aspx.cs">
       <DependentUpon>edicion_tablas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\edicion_tablas.aspx.designer.cs">
       <DependentUpon>edicion_tablas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\EliminarEntrenadores.aspx.cs">
+      <DependentUpon>EliminarEntrenadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\EliminarEntrenadores.aspx.designer.cs">
+      <DependentUpon>EliminarEntrenadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\EliminarUsuarios.aspx.cs">
+      <DependentUpon>EliminarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\EliminarUsuarios.aspx.designer.cs">
+      <DependentUpon>EliminarUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\entrenadores.aspx.cs">
       <DependentUpon>entrenadores.aspx</DependentUpon>
@@ -185,6 +230,34 @@
     </Compile>
     <Compile Include="pages\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ConsultarEntrenadores.aspx.cs">
+      <DependentUpon>ConsultarEntrenadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ConsultarEntrenadores.aspx.designer.cs">
+      <DependentUpon>ConsultarEntrenadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\InsertarEntrenadores.aspx.cs">
+      <DependentUpon>InsertarEntrenadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\InsertarEntrenadores.aspx.designer.cs">
+      <DependentUpon>InsertarEntrenadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\InsertarUsuarios.aspx.cs">
+      <DependentUpon>InsertarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\InsertarUsuarios.aspx.designer.cs">
+      <DependentUpon>InsertarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\OpcionesInsertar.aspx.cs">
+      <DependentUpon>OpcionesInsertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\OpcionesInsertar.aspx.designer.cs">
+      <DependentUpon>OpcionesInsertar.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Opciones_login.aspx.cs">
       <DependentUpon>Opciones_login.aspx</DependentUpon>
@@ -336,6 +409,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imagenes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

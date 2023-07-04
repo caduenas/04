@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace GymMasterProyectoFinalF.pages
 {
-    public partial class Home_usuarios : System.Web.UI.Page
+    public partial class Insertar : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
