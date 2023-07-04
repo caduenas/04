@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gestion usuarios.aspx.cs" Inherits="GymMasterProyectoFinalF.pages.pagina5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pagina5.aspx.cs" Inherits="GymMasterProyectoFinalF.pages.pagina5" %>
 
 <!DOCTYPE html>
 

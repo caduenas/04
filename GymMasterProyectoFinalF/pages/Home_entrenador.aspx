@@ -56,7 +56,7 @@
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="entrenadores.aspx">Gestionar usuarios</a>
+                        <a class="nav-link" href="gestion_usuarios.aspx">Gestionar usuarios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="preferencias.aspx">Preferencias</a>

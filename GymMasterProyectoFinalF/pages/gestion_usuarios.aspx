@@ -77,7 +77,9 @@
                         <Columns>
                             <asp:TemplateField HeaderText="Acciones">
                                 <ItemTemplate>
-                                    <asp:Button ID="btnVer" runat="server" CssClass="btn btn-primary btn-sm" Text="Ver" OnClick="btnVer_Click" />
+                                    <asp:Button ID="btnantro" runat="server" CssClass="btn btn-primary btn-sm" Text="Tabla antropometrica" OnClick="btnVer_Click"/>
+                                    <asp:Button ID="btnnutricional" runat="server" CssClass="btn btn-primary btn-sm" Text="Tabla nutricional" OnClick="btnVer_Click1"/>
+                                    <asp:Button ID="btnrutina" runat="server" CssClass="btn btn-primary btn-sm" Text="Tabla rutina" OnClick="btnVer_Click2"/>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
