@@ -88,10 +88,10 @@
                 <a href="tabla_dieta.aspx" class="btn btn-primary btn-block">Nutrición</a>
             </div>
             <div class="col-lg-3">
-                <a href="entrenamiento.html" class="btn btn-primary btn-block">Entrenamiento</a>
+                <a href="tabla_rutina.aspx" class="btn btn-primary btn-block">Entrenamiento</a>
             </div>
             <div class="col-lg-3">
-                <a href="preferencias.html" class="btn btn-primary btn-block">Preferencias</a>
+                <a href="preferencias.aspx" class="btn btn-primary btn-block">Preferencias</a>
             </div>
         </div>
     </div>
