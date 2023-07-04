@@ -61,7 +61,7 @@ namespace GymMasterProyectoFinalF.pages
                     cookie.Expires = DateTime.Now.AddMonths(1); // Establece la fecha de caducidad de la cookie
                     Response.Cookies.Add(cookie);
                     conn.Close();
-                    Response.Redirect("antropometrica_usuario.aspx");
+                    Response.Redirect("Home_administrador.aspx");
                 }
                 else
                 {
